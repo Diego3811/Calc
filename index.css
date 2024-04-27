@@ -1,0 +1,96 @@
+  html{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-content: center;
+}
+
+#calculator{
+    background-color: hsl(240, 5%, 28%);     
+    border-radius: 10px;
+    width: 10rem;
+    height: 250px; 
+   /*  display: grid; */
+}
+
+#top{
+    display: flex;
+    margin: 10px;
+    /* background-color: blue; */
+ }
+
+#display{
+    text-align: end;
+    padding: 5px;
+    color: hsl(0, 0%, 100%);
+    /* background-color: hsl(0, 1%, 33%) ;*/ 
+    margin: 1rem;
+}
+
+ .circle{
+    display: inline-block;
+    background-color: aqua;
+    border-radius: 50%;
+    height: 18px;
+    width: 15px;
+}
+
+#buttons{
+    /*  background-color: rgb(255, 0, 0); */
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: .3rem;
+    padding: .7rem;
+    width: .5rem;
+    height: .5rem;
+    position: static    ;
+    /* align-items: stretch; */ 
+} 
+
+.number_gray,
+.symbol_orange,
+.dark{
+    border-radius: 50%;
+    width: auto;
+    display: grid;
+    justify-content: center;
+}
+
+.symbol_orange{
+    background-color: orange;
+    color: hsl(0, 0%, 100%);
+}
+
+#cero{
+    width: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;  
+    border-radius: 50px;  
+}
+
+#circle_green{
+    background-color: green;
+}
+
+#circle_yellow{
+    background-color: rgba(217, 189, 7, 0.738);
+}
+
+#circle_red{
+    background-color: rgb(128, 0, 0);
+}
+
+.dark{
+    background-color: hsl(0, 0%, 57%);
+    color: hsl(0, 0%, 100%);
+}
+
+.number_gray{
+    
+    background-color: hsl(0, 6%, 24%);
+    color: hsl(0, 0%, 100%); 
+     box-shadow: 5px red; 
+}
+
+ 
