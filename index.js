@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function calcular(expresion) {
-    expresion = expresion.replace(/X/g, "*"); // Reemplazar X con *
+    expresion = expresion.replace(/x/g, "*"); // Reemplazar X con *
     expresion = expresion.replace(/÷/g, "/"); // Reemplazar ÷ con /
     try {
         return eval(expresion);
